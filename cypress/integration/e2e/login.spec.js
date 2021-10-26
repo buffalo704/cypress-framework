@@ -6,7 +6,7 @@ describe('Login Failed Test', () => {
   before(function () {
     cy.visit(url)
     Navbar.clickSignIn()
-  })
+  }) 
 
   it('should try to login with invalid credentials', function () {
     LoginPage.login('invalid username', 'invalid password')
